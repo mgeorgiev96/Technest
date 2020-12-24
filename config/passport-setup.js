@@ -13,9 +13,9 @@ passport.deserializeUser((id,done)=>{
 })
 
 passport.use(new GoogleStrategy({
-    clientID: '984651524053-5f3q4tlbgpm686n44c91el4uvn5pbmrk.apps.googleusercontent.com',
-    clientSecret: 'gbAfRDQVH7dx-xbOy8rJ3Vvp',
-    callbackURL: '/api/google/redirect'
+    clientID: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+    callbackURL: process.env.CALLBACK_URL
 },(accessToken,refreshToken,profile,done)=>{
     User.findOne({username:profile._json.email}).then(user=>{
         if(user){
