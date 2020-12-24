@@ -1,0 +1,690 @@
+body {
+  font-family: "Quantico", sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url("../../src/images/tech-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home_container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home_container h1 {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  position: absolute;
+  bottom: 25%;
+  text-align: center;
+  width: 100%;
+  right: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  animation: showHeading 1s linear;
+  font-size: 2.6rem;
+}
+
+.item_specific {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  width: 65%;
+  height: 60vh;
+  margin: 5% auto;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: white;
+}
+.item_specific .item_description {
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 5px;
+  text-align: center;
+  overflow: auto;
+  height: 100%;
+  font-family: "Black Ops One", cursive;
+  background-color: black;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 2px solid white;
+  font-size: 1.2rem;
+}
+.item_specific .item_description button {
+  margin-top: 20px;
+}
+.item_specific .item_description button i {
+  margin-left: 10px;
+  line-height: 2px;
+}
+.item_specific .item_description button:active {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+.item_specific .item_description h3 {
+  border-bottom: 1px solid lightgray;
+  padding: 5px 0;
+}
+.item_specific .item_description ul {
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 15px;
+  text-align: left;
+  word-wrap: break-word;
+}
+.item_specific .carousel {
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+}
+.item_specific .carousel span {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.item_specific .carousel .fa-cart-plus {
+  position: absolute;
+  right: 2%;
+  bottom: 1%;
+  color: black;
+  z-index: 1;
+  font-size: 1rem;
+  padding: 9px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.item_specific .carousel .fa-cart-plus:hover {
+  color: white !important;
+  background: black;
+  transform: scale(0.9);
+  transition: 200ms;
+}
+.item_specific .carousel .fa-cart-plus:active {
+  transition: 150ms;
+  transform: scale(1.05);
+}
+.item_specific .carousel .fa-heart {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.item_specific .carousel .fa-heart:active {
+  color: red;
+  transition: 200ms;
+  transform: scale(1.2);
+}
+.item_specific .carousel .carousel-control-next {
+  background-color: black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+}
+.item_specific .carousel .carousel-control-next .carousel-control-next-icon {
+  margin: 10px 0 0 10px;
+}
+.item_specific .carousel .carousel-control-prev {
+  background-color: black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+}
+.item_specific .carousel .carousel-control-prev .carousel-control-prev-icon {
+  margin: 10px 0 0 8px;
+}
+.item_specific .carousel .carousel-inner {
+  height: 100%;
+}
+.item_specific .carousel .carousel-inner .carousel-item {
+  height: 65vh;
+}
+.item_specific .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: scale(0.6);
+}
+
+.box-with-text {
+  background-image: url("../../src/images/city.jpg");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: moveLogo 1s linear;
+  overflow: hidden;
+}
+
+.home_container {
+  overflow: hidden;
+}
+
+.box-with-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  white-space: nowrap;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14rem;
+  font-family: "Black Ops One", cursive;
+}
+
+.navbar {
+  color: white;
+  background: black;
+}
+.navbar .navbar-brand {
+  font-family: "Black Ops One", cursive;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown .dropdown-menu a {
+  text-decoration: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: black;
+}
+.dropdown .dropdown-menu a:visited {
+  color: black;
+}
+
+.shop_container {
+  z-index: 0;
+  margin: 3% auto;
+  height: 82vh;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: center;
+  grid-gap: 1.5rem;
+  overflow: auto;
+}
+.shop_container .card {
+  height: 85vh;
+  color: black;
+}
+.shop_container .card:hover .card-body a {
+  opacity: 1;
+  transition: 350ms;
+  left: 5%;
+}
+.shop_container .card .card-title {
+  font-size: 0.95rem !important;
+}
+.shop_container .card .card-body {
+  position: relative;
+  text-align: center;
+}
+.shop_container .card .card-body a {
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+  color: white;
+  left: 2%;
+}
+.shop_container .card .card-body a:hover {
+  color: white;
+  transition: 200ms;
+}
+.shop_container .card button {
+  opacity: 0;
+  float: right;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 3px lightgray;
+  margin: 5px 0 0 0;
+}
+.shop_container .card:hover button {
+  transition: 350ms;
+  opacity: 1;
+  margin: 5px 7px 0 0;
+}
+.shop_container .card .price_tag {
+  color: black;
+  line-height: 3rem;
+  background: black;
+}
+.shop_container .card:hover .card_description {
+  display: block;
+}
+.shop_container .card:hover img {
+  transform: scale(0.54);
+  transition: 300ms;
+}
+.shop_container .card:hover .card-body {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  border: 1px solid white;
+  transition: 250ms;
+}
+.shop_container .card img {
+  height: 80%;
+  transform: scale(0.5);
+}
+.shop_container .card .card_description {
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+.table {
+  margin: 2% auto;
+  width: 80vw;
+}
+.table .img_holder {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.table .img_holder img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.table .heading_col {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.table .fa-trash:hover {
+  color: red;
+  transition: 200ms;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.table .fa-trash:active {
+  transition: 200ms;
+  transform: scale(1.2);
+}
+
+.cart_container, .favourite_container, .history_container {
+  height: 75vh;
+  overflow: auto;
+  position: relative;
+  margin-top: 10vh;
+}
+@keyframes showHeading {
+  0% {
+    opacity: 0;
+    bottom: 19%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 25%;
+  }
+}
+@keyframes moveLogo {
+  0% {
+    transform: translateX(-50%) translateY(-65%);
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+  }
+}
+@keyframes moveToggler {
+  0% {
+    transform: scale(1.17);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@media all and (max-width: 550px) {
+  .shop_container {
+    z-index: 0;
+    height: 80vh;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 1rem;
+    margin: 1% auto;
+  }
+  .shop_container .card {
+    height: 85vh;
+  }
+  .shop_container .card .card-title {
+    font-size: 0.72rem !important;
+  }
+  .shop_container .card .card-body {
+    position: relative;
+    text-align: center;
+    font-size: 0.68rem;
+  }
+  .shop_container .card:hover img {
+    transform: scale(0.43);
+    transition: 300ms;
+  }
+  .shop_container .card img {
+    height: 80%;
+    transform: scale(0.4);
+  }
+
+  .box-with-text {
+    font-size: 5rem;
+  }
+
+  .item_specific {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 83%;
+    height: 65vh;
+  }
+  .item_specific .item_description {
+    font-size: 0.8rem;
+  }
+  .item_specific .item_description h3 {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  .item_specific .carousel span {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-size: 1rem;
+  }
+  .item_specific .carousel .fa-cart-plus {
+    right: 3%;
+    bottom: 1%;
+    font-size: 0.9rem;
+  }
+  .item_specific .carousel .fa-heart {
+    left: 3%;
+    bottom: 2%;
+    font-size: 0.9rem;
+  }
+}
+@media all and (max-width: 1400px) {
+  .box-with-text {
+    font-size: 10rem;
+  }
+
+  .item_specific {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 75%;
+    height: 65vh;
+    margin-top: 15vh;
+  }
+  .item_specific .item_description {
+    font-size: 0.8rem;
+  }
+  .item_specific .item_description h3 {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  .item_specific .carousel span {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-size: 1rem;
+  }
+  .item_specific .carousel .fa-cart-plus {
+    right: 3%;
+    bottom: 1%;
+    font-size: 0.9rem;
+  }
+  .item_specific .carousel .fa-heart {
+    left: 3%;
+    bottom: 2%;
+    font-size: 0.9rem;
+  }
+
+  .shop_container {
+    z-index: 0;
+    height: 80vh;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 1rem;
+    margin-top: 8vh;
+  }
+  .shop_container .card {
+    height: 85vh;
+  }
+  .shop_container .card .card-title {
+    font-size: 0.75rem !important;
+  }
+  .shop_container .card .card-body {
+    position: relative;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .shop_container .card:hover img {
+    transform: scale(0.43);
+    transition: 300ms;
+  }
+  .shop_container .card img {
+    height: 80%;
+    transform: scale(0.4);
+  }
+}
+@media all and (max-width: 900px) {
+  .home_container h1 {
+    font-size: 1.4rem;
+  }
+
+  .item_specific {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 80%;
+    height: 65vh;
+    margin-top: 15vh;
+  }
+  .item_specific .item_description {
+    font-size: 0.8rem;
+  }
+  .item_specific .item_description h3 {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  .item_specific .carousel span {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-size: 1rem;
+  }
+  .item_specific .carousel .fa-cart-plus {
+    right: 3%;
+    bottom: 1%;
+    font-size: 0.9rem;
+  }
+  .item_specific .carousel .fa-heart {
+    left: 3%;
+    bottom: 2%;
+    font-size: 0.9rem;
+  }
+
+  .shop_container {
+    z-index: 0;
+    height: 80vh;
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 2rem;
+    margin-top: 15vh;
+  }
+  .shop_container .card {
+    height: 82vh;
+  }
+  .shop_container .card .card-title {
+    font-size: 0.75rem !important;
+  }
+  .shop_container .card .card-body {
+    position: relative;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .shop_container .card:hover img {
+    transform: scale(0.43);
+    transition: 300ms;
+  }
+  .shop_container .card img {
+    height: 80%;
+    transform: scale(0.4);
+  }
+
+  .box-with-text {
+    background-image: url("../../src/images/city.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: moveLogo 1s linear;
+    overflow: hidden;
+  }
+
+  .box-with-text {
+    font-size: 6rem;
+  }
+}
+.idle_toggler {
+  margin: 6px 0 0 10px;
+  transition: 750ms;
+}
+
+.move_toggler {
+  margin: 65px 0 0 10px;
+  transition: 750ms;
+}
+
+.shop_container, .favourite_container, .cart_container, .history_container, .item_description {
+  --scrollbarBG: #fff;
+  --thumbBG: #90A4AE;
+}
+
+.shop_container::-webkit-scrollbar, .favourite_container::-webkit-scrollbar, .cart_container::-webkit-scrollbar, .history_container::-webkit-scrollbar, .item_description::-webkit-scrollbar {
+  width: 11px;
+}
+
+.shop_container, .favourite_container, .cart_container, .history_container, .item_description {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.shop_container::-webkit-scrollbar-track, .favourite_container::-webkit-scrollbar-track, .cart_container::-webkit-scrollbar-track, .history_container::-webkit-scrollbar-track, .item_description::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  border-radius: 10px;
+}
+
+.shop_container::-webkit-scrollbar-thumb, .favourite_container::-webkit-scrollbar-thumb, .cart_container::-webkit-scrollbar-thumb, .history_container::-webkit-scrollbar-thumb, .item_description::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  background-image: -webkit-radial-gradient(#0F2027, #fff);
+  border: 3px solid var(--scrollbarBG);
+  border-radius: 10px;
+}
+
+.shop_container, .favourite_container, .cart_container, .history_container, .item_description {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.shop_container::-webkit-scrollbar, .favourite_container::-webkit-scrollbar, .cart_container::-webkit-scrollbar, .history_container::-webkit-scrollbar, .item_description::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+@media all and (max-width: 992px) {
+  .navbar_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    z-index: 1;
+  }
+  .navbar_container .fas {
+    display: none;
+  }
+}
+@media all and (min-width: 990px) {
+  .navbar {
+    height: 1px;
+    transition: 300ms;
+    width: 100%;
+    opacity: 0;
+    color: white;
+    position: absolute;
+  }
+
+  .navbar_container {
+    z-index: 1;
+  }
+  .navbar_container .fas {
+    animation: moveToggler 850ms infinite;
+    color: black;
+    background: white;
+    transition: 750ms;
+  }
+
+  .navbar_show_toggler {
+    height: 60px;
+    transition: 300ms;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar_container {
+    height: auto;
+    z-index: 1;
+  }
+  .navbar_container .fas {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px lightgray;
+    padding: 3px 6px;
+    border-radius: 2px;
+    transition: 300ms;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+{
+  "name": "shophut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Martin Georgiev",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.7",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "stripe": "^8.129.0",
+    "uniqid": "^5.2.0"
+  }
+}
