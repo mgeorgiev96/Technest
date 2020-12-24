@@ -484,7 +484,7 @@ body {
     height: 80vh;
     grid-template-columns: repeat(3, 32%);
     grid-gap: 1rem;
-    margin-top: 8vh;
+    margin-top: 6vh;
   }
   .shop_container .card {
     height: 85vh;
@@ -549,8 +549,8 @@ body {
   .shop_container {
     z-index: 0;
     height: 82vh;
-    grid-template-columns: repeat(2, 49%);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 49.5%);
+    grid-gap: 0.5rem;
     margin-top: 15vh;
   }
   .shop_container .card {
@@ -582,7 +582,7 @@ body {
   }
 
   .box-with-text {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 }
 .idle_toggler {
