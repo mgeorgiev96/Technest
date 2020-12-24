@@ -408,7 +408,7 @@ body {
   }
 
   .box-with-text {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .item_specific {
@@ -444,7 +444,7 @@ body {
 }
 @media all and (max-width: 1400px) {
   .box-with-text {
-    font-size: 10rem;
+    font-size: 9rem;
   }
 
   .item_specific {
@@ -526,6 +526,9 @@ body {
     padding: 5px 0;
     font-size: 1rem;
   }
+  .item_specific .carousel img {
+    transform: scale(0.8);
+  }
   .item_specific .carousel span {
     position: absolute;
     top: 2%;
@@ -546,12 +549,12 @@ body {
   .shop_container {
     z-index: 0;
     height: 80vh;
-    grid-template-columns: repeat(2, 48%);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 1rem;
     margin-top: 15vh;
   }
   .shop_container .card {
-    height: 82vh;
+    height: 83vh;
   }
   .shop_container .card .card-title {
     font-size: 0.75rem !important;
