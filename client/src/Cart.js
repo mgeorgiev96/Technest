@@ -31,7 +31,7 @@ function Cart() {
           stripeKey="pk_test_51GxXTwJWnlXzpGEmHhKz3nGdCrzRjY8QE4fuYMo6CNYAuJXIQCDMy2LXCAVyTbME9zrYK60HxAjBEaE9ulvYSRJ700jdk4z5x2"
           billingAddress
           shippingAddress
-          description={`TechHut - ${total}$`}
+          description={`TechHut - ${total.toFixed(2)}$`}
           image="https://stripe.com/img/documentation/checkout/marketplace.png"
           amount={total * 100}
           currency='USD'

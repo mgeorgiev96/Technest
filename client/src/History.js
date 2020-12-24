@@ -18,7 +18,7 @@ function History() {
                     </tr>
                 </thead>
                 <tbody>
-                    {user? user.history.map((purchase,i)=><HistoryItem id={purchase.id} index={i+1} name={purchase.description} amount={purchase.amount}/>):""}
+                    {user? user.history.map((purchase,i)=><HistoryItem id={purchase.id} index={i+1} name={purchase.description} amount={purchase.amount.toFixed(2)}/>):""}
                 </tbody>
             </table>
         </div>
