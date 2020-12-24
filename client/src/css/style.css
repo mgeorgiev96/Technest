@@ -548,13 +548,13 @@ body {
 
   .shop_container {
     z-index: 0;
-    height: 80vh;
+    height: 82vh;
     grid-template-columns: repeat(2, 49%);
     grid-gap: 1rem;
     margin-top: 15vh;
   }
   .shop_container .card {
-    height: 83vh;
+    height: 85vh;
   }
   .shop_container .card .card-title {
     font-size: 0.75rem !important;
@@ -582,7 +582,7 @@ body {
   }
 
   .box-with-text {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 }
 .idle_toggler {
