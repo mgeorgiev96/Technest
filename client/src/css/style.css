@@ -508,7 +508,7 @@ body {
 }
 @media all and (max-width: 900px) {
   .home_container h1 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .item_specific {
@@ -554,7 +554,7 @@ body {
     margin-top: 15vh;
   }
   .shop_container .card {
-    height: 85vh;
+    height: 90vh;
   }
   .shop_container .card .card-title {
     font-size: 0.75rem !important;
@@ -582,7 +582,7 @@ body {
   }
 
   .box-with-text {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 .idle_toggler {
