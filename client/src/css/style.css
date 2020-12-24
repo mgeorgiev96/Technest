@@ -508,7 +508,7 @@ body {
 }
 @media all and (max-width: 900px) {
   .home_container h1 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .item_specific {
@@ -582,7 +582,7 @@ body {
   }
 
   .box-with-text {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 .idle_toggler {

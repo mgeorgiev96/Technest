@@ -415,7 +415,7 @@ body{
         }
     }  
     .box-with-text{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .item_specific{
         display: grid;
@@ -453,7 +453,7 @@ body{
 }
 @media all and (max-width:1400px){
     .box-with-text{
-        font-size: 10rem;
+        font-size: 9rem;
     }
     .item_specific{
         display: grid;
@@ -494,7 +494,7 @@ body{
         height: 80vh;
         grid-template-columns: repeat(3,32%);
         grid-gap: 1rem;
-        margin-top: 8vh;
+        margin-top: 6vh;
         .card{
             height: 85vh;
             .card-title{
@@ -520,7 +520,7 @@ body{
 @media all and (max-width:900px){
     .home_container{
         h1{
-            font-size: 1.4rem;
+            font-size: 1.25rem;
         }
     }
     .item_specific{
@@ -538,6 +538,9 @@ body{
             }
         }
         .carousel{
+            img{
+                transform: scale(0.8);
+            }
             span{
                 position: absolute;
                 top: 2%;
@@ -559,12 +562,12 @@ body{
     }
     .shop_container{
         z-index: 0;
-        height: 80vh;
-        grid-template-columns: repeat(2,48%);
-        grid-gap: 2rem;
+        height: 82vh;
+        grid-template-columns: repeat(2,49.5%);
+        grid-gap: 0.5rem;
         margin-top: 15vh;
         .card{
-            height: 82vh;
+            height: 85vh;
             .card-title{
                 font-size: 0.75rem !important;
             }
@@ -593,7 +596,7 @@ body{
     }
     
     .box-with-text{
-        font-size: 6rem;
+        font-size:5rem;
     }
 }
 .idle_toggler{

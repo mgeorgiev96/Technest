@@ -11,7 +11,7 @@ const cookieSession = require('cookie-session')
 const passport = require('passport')
 const passportSetup = require('./config/passport-setup')
 
-mongoose.connect(process.env.MONGO_DB,{ useUnifiedTopology: true ,useNewUrlParser: true })
+mongoose.connect('mongodb://mgeorgiev9611:martin12345@testcluster1-shard-00-00.u94v9.mongodb.net:27017,testcluster1-shard-00-01.u94v9.mongodb.net:27017,testcluster1-shard-00-02.u94v9.mongodb.net:27017/shophut?ssl=true&replicaSet=TestCluster1-shard-0&authSource=admin&retryWrites=true&w=majority',{ useUnifiedTopology: true ,useNewUrlParser: true })
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
@@ -19,7 +19,7 @@ app.set('view engine','ejs')
 
 app.use(cookieSession({
     maxAge: 24*60*60*1000,
-    keys: [process.env.SECRET_KEY]
+    keys: ['sho290tech01-299203key']
 }))
 
 app.use(passport.initialize())

@@ -3,7 +3,7 @@ const path = require('path')
 const User = require('../models/model')
 const bcrypt = require('bcrypt')
 const passport = require('passport')
-const stripe = require('stripe')(process.env.STRIPE_KEY)
+const stripe = require('stripe')('sk_test_51GxXTwJWnlXzpGEmQ7QU6Vry213lP7XVpRiJ0rLxxwijpYPSBCeNDF4KISxQ2OEB1SFZE26nUKc2FmYGvI66to40008X6y2OQq')
 const uniqid = require('uniqid')
 
 //User Authentication
