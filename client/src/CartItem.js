@@ -4,6 +4,7 @@ import {ShopContext} from './Context'
 
 function CartItem(props) {
     const [cart,setCart,user,setUser,shop,setShop,itemID,setItemID,itemData,setItemData,total,setTotal] = useContext(ShopContext)
+    console.log(process.env.MONGO_DB)
     const deleteCartItem = (e)=>{
         let target = e.target
         let cartArray = cart
