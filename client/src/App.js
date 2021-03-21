@@ -10,6 +10,7 @@ import Favourites from './Favourites';
 import History from './History'
 
 function App() {
+  console.log(process.env.MONGO_DB)
   return (
     <ShopProvider>
       <Router>
