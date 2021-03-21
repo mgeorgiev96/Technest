@@ -11,10 +11,13 @@ import History from './History'
 
 function App() {
   console.log(process.env.MONGO_DB)
+  console.log(process.env)
   return (
     <ShopProvider>
       <Router>
         <div className="App">
+          <h1>Martin</h1>
+          <h3>{process.env.MONGO_DB}</h3>
           <Navigation/>
           <Route path='/api/profile' component={Profile}></Route>
           <Route path='/api/shop' component={Shop}></Route>
