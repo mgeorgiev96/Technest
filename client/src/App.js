@@ -13,6 +13,7 @@ import {} from 'dotenv/config'
 function App() {
   console.log(process.env.MONGO_DB)
   console.log(process.env)
+  console.log(process.env.REACT_APP_APP_ID)
   return (
     <ShopProvider>
       <Router>
