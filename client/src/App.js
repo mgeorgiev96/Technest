@@ -10,8 +10,6 @@ import Favourites from './Favourites';
 import History from './History'
 
 function App() {
-  console.log(process.env.REACT_APP_APP_ID)
-  console.log(process.env)
   return (
     <ShopProvider>
       <Router>
