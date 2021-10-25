@@ -13,7 +13,7 @@ function Cart() {
       email: token.email,
       price: total,
       token: token.id,
-      description: `Transaction made on ${moment(Date.now()).format('LLLL')}.`
+      description: `Transaction made on ${moment(Date.now()).format('LLLL')}...`
     }).then(res=>{
       setUser(res.data)
       setCart([])
